@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu primeiro site "cringe" - home</title>
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- GoogleFonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;1,400&display=swap"
+        rel="stylesheet">
+    <!-- Global style -->
+    <link rel="stylesheet" href="css/formato.css">
+    <!-- <link rel="stylesheet" href="css/home_format.css"> -->
+
+</head>
+
+<body>
+    <header class="mb-4">
+        <nav class="navbar navbar-expand-lg bg-dark py-2 px-2 z-3" data-bs-theme="dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="home.html">
+                    <img src="img/herbs-logo_wht.png" alt="Herb's Food" width="150" height="50">
+                </a>
+                <button class="navbar-toggler bg-light bg-opacity-50" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarCollapseContent" aria-controls="navbarCollapseContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarCollapseContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="receitas.html">Receitas</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"  href="cadastro.html">Cadastro</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+    </header>
+
+    <main>
+        <div class="container text-center text-light my-5">
+            <h2>Faça já o seu Cadastro!</h2>
+            <p class="lead">E e receba em primaiera mão as nossas deliciosas receitas</p>
+         <form class="row mb-3 mt-5" action="processaForm.php" method="post">
+                <div class="row mb-3 mt-5">
+                    <label for="formLabel_nome" class="col-sm-2 col-form-label text-start text-sm-end">Nome:</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="formLabel_nome" placeholder="Nome" required>
+                    </div>
+                   
+                </div>
+                <div class="row mb-3">
+                    <label for="formLabelEmail" class="col-sm-2 col-form-label text-start text-sm-end">Email:</label>
+                    <div class="col-sm-8">
+                      <input type="email" class="form-control" id="formLabelEmail" placeholder="Email" required>
+                    </div>
+                   
+                </div>
+                <div class="row mb-3">
+                    <label for="formLabelCep" class="col-sm-2 col-form-label text-start text-sm-end">CEP:</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" id="formLabelCep" placeholder="CEP" required>
+                    </div>
+                  
+                </div>
+                <div class="row mb-3">
+                    <label for="formLabelRua" class="col-sm-2 col-form-label text-start text-sm-end">Rua:</label>
+                    <div class="col-sm-8">
+                      <input type="text" class="form-control" id="formLabelRua" placeholder="Rua" required>
+                    </div>              
+                </div>
+                <div class="row mb-3">
+                    <label for="formLabelNum" class="col-sm-2 col-form-label text-start text-sm-end">Nº:</label>
+                    <div class="col-sm-2">
+                      <input type="number" class="form-control" id="formLabelNum" placeholder="Nº" required>
+                    </div>
+                    <label for="formLabelComplet" class="col-sm-2 col-form-label text-start text-sm-end">Compl.:</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" id="formLabelComplet" placeholder="Complemento (bloco apto.">
+                    </div>
+                </div>
+                <div class="row mb-3">
+                    <label for="formLabelCid" class="col-sm-2 col-form-label text-start text-sm-end">Cidade:</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" id="formLabelCid" placeholder="Cidade" required>
+                    </div>
+                    <label for="formLabelUf" class="col-sm-2 col-form-label text-start text-sm-end">UF:</label>
+                    <div class="col-sm-2">
+                      <select id="formLabelUf"  class="form-select">
+                        <option value="AC">AC</option>
+                        <option value="AL">AL</option>
+                        <option value="AP">AP</option>
+                        <option value="AM">AM</option>
+                        <option value="BA">BA</option>
+                        <option value="CE">CE</option>
+                        <option value="DF">DF</option>
+                        <option value="ES">ES</option>
+                        <option value="GO">GO</option>
+                        <option value="MA">MA</option>
+                        <option value="MT">MT</option>
+                        <option value="MS">MS</option>
+                        <option value="MG">MG</option>
+                        <option value="PA">PA</option>
+                        <option value="PB">PB</option>
+                        <option value="PR">PR</option>
+                        <option value="PE">PE</option>
+                        <option value="PI">PI</option>
+                        <option value="RJ">RJ</option>
+                        <option value="RN">RN</option>
+                        <option value="RS">RS</option>
+                        <option value="RO">RO</option>
+                        <option value="RR">RR</option>
+                        <option value="SC">SC</option>
+                        <option value="SP">SP</option>
+                        <option value="SE">SE</option>
+                        <option value="TO">TO</option>
+                    </select>
+                    </div>
+                    <div class="col-sm-2 mt-3 mt-sm-0 d-flex justify-content-start">
+                        <button type="submit" class="btn btn-warning">Cadastrar</button>
+                    </div>
+                </div>
+         </form>
+            
+        </div>
+
+    </main>
+    <footer>
+        <div class="container text-center">
+            <p class="m-0 text-light">Copyright© - Herb's Food 2023</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

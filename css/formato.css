@@ -1,0 +1,29 @@
+
+body
+{
+    font-family: 'Roboto', sans-serif;
+    background-color: #590505;
+    /* background-color: #3fe44d; */
+}
+
+header
+{
+    height: 60px;
+}
+
+main
+{
+    min-height: calc(100vh - 124px);
+    background-color: #590505;
+}
+
+footer
+{
+    height: 40px;
+    background-color: #020202;
+}
+footer p
+{
+   font-size: 0.85rem;
+   padding-top: 0.5rem;
+}
